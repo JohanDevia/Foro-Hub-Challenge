@@ -2,14 +2,12 @@ package com.forohub.aluraforo.usuario;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Table(name = "usuarios")
 @Entity(name = "usuario")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -32,6 +30,11 @@ public class Usuario {
 
 	public String getNombre() {
 		return nombre;
+	}
+	public Usuario() {}
+
+	public String getEmail() {
+		return email;
 	}
 
 }

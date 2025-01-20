@@ -3,16 +3,14 @@ package com.forohub.aluraforo.respuesta;
 import com.forohub.aluraforo.topico.Topico;
 import com.forohub.aluraforo.usuario.Usuario;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Table(name = "respuestas")
 @Entity(name = "respuesta")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
